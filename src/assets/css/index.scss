@@ -1,0 +1,98 @@
+
+// Global Styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 300;
+}
+
+// Blank Base Template Styles
+.blank-wrapper{
+  .main{
+    width: 80%;
+    margin: 40px auto;
+    h1{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Full Width Base Template Styles
+.full-wrapper{
+  .header{
+    background-color: #444444;
+    padding: 15px;
+    position: relative;
+    .full-logo {
+      height: 80px;
+      display: block;
+    }
+    ul{
+      position: absolute;
+      top: 18px;
+      right: 30px;
+      list-style: none;
+      li{
+        display: inline-block;
+        a{
+          color: #ffffff;
+          display: block;
+          padding: .75rem 1rem;
+          text-decoration: none;
+          &.active{
+            color: #61dafb;
+          }
+        }
+      }
+    }
+  }
+  .main{
+    max-width: 1200px;
+    min-height: 70vh;
+    padding: 30px 40px;
+    margin: 0 auto;
+  }
+  .footer{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+/* Mobile Breakpoint */
+@media only screen and (max-width : 992px) {
+
+  // Full Width Base Template Styles for Mobile
+  .full-wrapper {
+    .header {
+      padding: 15px;
+      .full-logo {
+        height: 50px;
+      }
+      ul{
+        position: relative;
+        top: 5px;
+        left: -40px;
+        li{
+          display: block;
+        }
+      }
+    }
+    .main {
+    padding: 10px 25px;
+    }
+    .footer{
+      padding: 20px;
+    }
+  }
+
+}
